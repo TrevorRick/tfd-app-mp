@@ -1,0 +1,16 @@
+<view>
+  <view class="labelTitle">身份验证流程</view>
+  <view class="section">
+    <icon type="info" size="14" />
+    <text class='tabText'>请使用相机录制一段正面人脸视频：</text>
+  </view>
+  <view class="section">
+    <icon type="info" size="14" />
+    <text class='tabTips'>1.请用普通话读一遍：“xxxxxxxxx”</text>
+  </view>
+  <view class="section">
+    <icon type="info" size="14" />
+    <text class='tabTips'>2.视频时长10-20秒</text>
+  </view>
+  <button type="{{buttonType}}" disabled="{{disabled}}" bindtap="takeVideo">录制视频</button>
+</view>

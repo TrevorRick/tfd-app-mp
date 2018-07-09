@@ -1,0 +1,23 @@
+<import src="../../wxParse/wxParse.wxml"/> 
+<view class="wxParse">
+    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+</view>
+
+<view class="page">
+  <view class="container">
+    <view class="section">
+      <view class="weui-cell__hd">
+        <view class="weui-label">姓 名</view>
+      </view>
+      <view class='weui-cell__hd'>{{name}}</view>
+    </view>
+
+    <view class="section">
+      <view class="weui-cell__hd">
+        <view class="weui-label" >身份证号</view>
+      </view>
+      <view class='weui-cell__hd'>{{id_card_number}}</view>
+    </view>
+    <button type="{{buttonType}}" disabled="{{disabled}}" bindtap="nextStep">下一步</button>
+  </view>
+</view>

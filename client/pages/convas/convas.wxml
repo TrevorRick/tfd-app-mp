@@ -1,0 +1,42 @@
+<page>
+  <view class="container">
+  <!--画布区域-->
+  <view class="canvas_area">
+    <!--同一页面中的canvas-id不可重复，如果使用一个已经出现过的canvas-id，该canvas 标签对应的画布将被隐藏并不再正常工作-->
+    <canvas canvas-id="myCanvas" class="myCanvas"
+      disable-scroll="false"
+      bindtouchstart="touchStart"
+      bindtouchmove="touchMove"
+      bindtouchend="touchEnd">
+    </canvas>
+    <label class="radio">
+      <radio value="" checked="">
+        <view class="labelTitle">我已经阅读并同意以下相关合同细则：</view>
+      </radio>
+    </label>
+    
+    <label class = "contractLists">
+      <view>
+        <icon type="info" size="10" />
+        <text class="section_one" bindtap='navigate_one'>设备买卖合同 </text>
+      </view>
+      <view>
+        <icon type="info" size="10" />
+        <text class="section_two" bindtap='navigate_two'>融资租赁合同</text>
+      </view>
+    </label> 
+  </view>
+  <!--画布工具区域-->
+  <view class="canvas_tools">
+    <!-- <view class="pen pen_small" bindtap="penSelect" data-param="5">
+      <text>细pen</text>
+    </view>
+    <view class="pen pen_large" bindtap="penSelect" data-param="15"></view>
+    <view class="pen pen_red" bindtap="colorSelect" data-param="#cc0033"></view>
+    <view class="pen pen_yellow" bindtap="colorSelect" data-param="#ff9900"></view>-->
+    <view class="pen eraser" bindtap="clearCanvas">橡皮</view> 
+    <!-- <button class="button" type="{{buttonType}}" disabled="{{disabled}}" bindtap="onSubmit">确定</button> -->
+    <view class="pen submit" bindtap="onSubmit">提交</view> 
+  </view>
+</view>
+</page>

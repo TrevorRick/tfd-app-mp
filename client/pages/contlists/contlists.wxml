@@ -1,0 +1,12 @@
+<view> 
+  <view class="section">
+    <text class='tabText'>点击查看您的合同：</text>
+  </view>
+  <view class="section">
+    <icon type="success" size="14" />
+    <text class='tabText'>xxxxxxx</text>
+  </view>
+  <view>
+    <button type="{{buttonType}}" disabled="{{disabled}}" bindtap="backTo">返回</button>
+  </view>
+</view>

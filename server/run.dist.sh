@@ -1,0 +1,6 @@
+#!/bin/sh
+
+TFD_APP_MP_SERVER_API_KEY="" \
+TFD_APP_MP_SERVER_API_SECRET="" \
+TFD_APP_MP_SERVER_APP_SECRET="" \
+npm run env node $@

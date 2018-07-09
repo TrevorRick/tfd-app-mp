@@ -1,0 +1,15 @@
+<view>
+  <view class="labelTitle">身份验证流程</view>
+  <view class="section">
+    <text class="tabDesc">请按照以下流程完成身份认证</text>
+  </view>
+  <view class="section">
+    <icon type="info" size="14" />
+    <text class='tabText'>使用相机拍摄一张正面人脸照片</text>
+  </view>
+  <view class="section">
+    <icon type="info" size="14" />
+    <text class='tabText'>使用相机录制一段正面人脸视频</text>
+  </view>
+  <button type="{{buttonType}}" disabled="{{disabled}}" bindtap="takePhoto">拍摄照片</button>
+</view>

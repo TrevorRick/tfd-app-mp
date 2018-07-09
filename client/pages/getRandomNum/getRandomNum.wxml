@@ -1,0 +1,22 @@
+<view>
+  <view class="labelTitle">活体视频验证流程</view>
+  <view class="section">
+    <text class='tabText'>录制一段自己朗读如下数字的视频</text>
+  </view>
+  <view class="section">
+    <icon type="info" size="12" />
+    <text class='tabTips'>请使用前置摄像</text>
+  </view>
+  <view class="section">
+    <icon type="info" size="12" />
+    <text class='tabTips'>请用普通话读一遍</text>
+  </view>
+  <view class="section">
+    <icon type="info" size="12" />
+    <text class='tabTips'>视频时长 3-5 秒</text>
+  </view>
+</view>
+<view class="randomnum" wx:if="{{requestResult}}">
+    <text>{{requestResult}}</text>
+</view>
+<button type="{{buttonType}}" disabled="{{disabled}}" bindtap="takeVideo">录制视频</button>

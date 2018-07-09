@@ -1,0 +1,4 @@
+<view> 
+  <button type="{{buttonType}}" disabled="{{disabled}}" bindtap="contList">查看已签署合同</button>
+  <button type="{{buttonType}}" disabled="{{disabled}}" bindtap="signCont">新用户签约</button>
+</view>

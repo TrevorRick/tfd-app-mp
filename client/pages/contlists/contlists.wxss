@@ -1,0 +1,16 @@
+.section{
+  padding-top: 50rpx;
+  margin-left: 50rpx;
+  border-bottom: 1rpx solid #CFD8DC;
+  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif
+}
+
+.tabText{
+  margin:0 0 0 35rpx;
+  padding-bottom: 20rpx
+
+}
+
+button {
+  margin: 60rpx;
+}

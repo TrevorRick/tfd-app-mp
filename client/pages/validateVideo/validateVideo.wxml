@@ -1,0 +1,38 @@
+<import src="../../wxParse/wxParse.wxml"/>
+<view class="wxParse">
+    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+</view>
+
+<view class="page">
+  <view wx:if="{{ enabled }}" class="container">
+    <view class="section">
+      <view class="weui-cell__hd">
+        <view class="weui-label">姓 名</view>
+      </view>
+      <view class='weui-cell__hd'>{{name}}</view>
+    </view>
+
+    <view class="section">
+      <view class="weui-cell__hd">
+        <view class="weui-label" >身份证号</view>
+      </view>
+      <view class='weui-cell__hd'>{{id_card_number}}</view>
+    </view>
+
+    <view class="section">
+      <view class="weui-cell__hd">
+        <view class="weui-label" >流程验证结果：</view>
+      </view>
+      <view class='weui-cell__hd'>{{procedure_validation}}</view>
+    </view>
+
+    <view class="section">
+      <view class="weui-cell__hd">
+        <view class="weui-label" >活体照与第三方数据源照片对比结果</view>
+      </view>
+      <view class='weui-cell__hd'>{{confidence}}</view>
+    </view>
+    <button type="{{buttonType}}" disabled="{{enable}}" bindtap="backToStep">重新拍摄</button>
+
+  </view>
+</view>

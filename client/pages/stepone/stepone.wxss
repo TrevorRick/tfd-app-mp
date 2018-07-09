@@ -1,0 +1,24 @@
+.labelTitle{
+  text-align: center;
+  font-size: 33px;
+  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif
+}
+
+.section{
+  padding-top: 50rpx;
+  margin-left: 10rpx;
+  border-bottom: 1rpx solid #CFD8DC;
+}
+
+.tabDesc{
+  font-size: 20px
+}
+
+.tabText{
+  margin:0 0 0 35rpx;
+  padding-bottom: 15rpx
+}
+
+button {
+  margin: 60rpx;
+}
